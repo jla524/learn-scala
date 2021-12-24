@@ -3,6 +3,6 @@
 //     scala> last(List(1, 1, 2, 3, 5, 8))
 //     res0: Int = 8
 
-def last[A](elements: List[A]) : A = elements.last
+def last[A](list: List[A]) : A = list.last
 
 println(last(List(1, 1, 2, 3, 5, 8)));

@@ -4,10 +4,10 @@
 //     scala> nth(2, List(1, 1, 2, 3, 5, 8))
 //     res0: Int = 2
 
-def nth[A](n: Int, elements: List[A]) : A = {
-    if (elements.length <= n)
+def nth[A](n: Int, list: List[A]) : A = {
+    if (list.length <= n)
         throw new NoSuchElementException;
-    elements(n)
+    list(n)
 }
 
 println(nth(2, List(1, 1, 2, 3, 5, 8)));
